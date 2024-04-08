@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.10.2 FATAL_ERROR)
 find_package(@LIB_NAME@@LIB_VER_MAJOR@ ${@LIB_NAME@_FIND_VERSION} REQUIRED COMPONENTS ${@LIB_NAME@_FIND_COMPONENTS})
 
 # Set up the core library and add it to the list of all components
+add_library(@LIB_NAME_COMP_PREFIX@::@LIB_NAME_COMP_PREFIX@ ALIAS @LIB_NAME@@LIB_VER_MAJOR@::@LIB_NAME@@LIB_VER_MAJOR@)
 add_library(@LIB_NAME_COMP_PREFIX@::core ALIAS @LIB_NAME@@LIB_VER_MAJOR@::@LIB_NAME@@LIB_VER_MAJOR@)
 set(ALL_COMPONENTS @LIB_NAME_COMP_PREFIX@::core)
 
@@ -28,4 +29,4 @@ endforeach()
 
 # Add a root gz::lib alias
 add_library(@LIB_NAME_COMP_PREFIX@ INTERFACE IMPORTED)
-target_link_libraries(@LIB_NAME_COMP_PREFIX@ INTERFACE @LIB_NAME_COMP_PREFIX@::core ${ALL_COMPONENTS})
+target_link_libraries(@LIB_NAME_COMP_PREFIX@ INTERFACE ${ALL_COMPONENTS})
