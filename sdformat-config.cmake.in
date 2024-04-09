@@ -15,11 +15,6 @@ foreach(component ${components})
     continue()
   endif()
 
-  # Skip the -all target
-  if(${component} STREQUAL @LIB_NAME@@LIB_VER_MAJOR@::@LIB_NAME@@LIB_VER_MAJOR@-all)
-    continue()
-  endif()
-
   # Change "gz-libN::gz-libN-component" to "component"
   string(REGEX REPLACE "@LIB_NAME@@LIB_VER_MAJOR@::@LIB_NAME@@LIB_VER_MAJOR@-" "" component_name ${component})
   add_library(@LIB_NAME_COMP_PREFIX@::${component_name} ALIAS ${component})
