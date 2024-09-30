@@ -2,6 +2,13 @@
 Changelog for package sdformat_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump version to 15.0.0 (`#5 <https://github.com/gazebo-release/sdformat_vendor/issues/5>`_)
+* Apply prerelease suffix (`#3 <https://github.com/gazebo-release/sdformat_vendor/issues/3>`_)
+* Upgrade to Ionic
+* Contributors: Addisu Z. Taddese
+
 0.1.3 (2024-08-08)
 ------------------
 * Update vendored package version to 14.5.0
