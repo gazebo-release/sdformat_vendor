@@ -2,6 +2,12 @@
 Changelog for package sdformat_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Replace liburdfdom-dev with the ROS package urdfdom (`#6 <https://github.com/gazebo-release/sdformat_vendor/issues/6>`_)
+  This ensures that we use the same version on all supported platforms
+* Contributors: Addisu Z. Taddese
+
 0.0.6 (2024-08-08)
 ------------------
 * Update vendored package version to 14.5.0
