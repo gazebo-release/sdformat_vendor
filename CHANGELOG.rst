@@ -2,6 +2,11 @@
 Changelog for package sdformat_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Bump version to 14.6.0 (`#10 <https://github.com/gazebo-release/sdformat_vendor/issues/10>`_)
+* Contributors: Nate Koenig
+
 0.0.7 (2024-11-05)
 ------------------
 * Replace liburdfdom-dev with the ROS package urdfdom (`#6 <https://github.com/gazebo-release/sdformat_vendor/issues/6>`_)
