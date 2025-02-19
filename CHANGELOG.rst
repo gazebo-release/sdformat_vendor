@@ -2,8 +2,8 @@
 Changelog for package sdformat_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2025-02-19)
+------------------
 * Bump version to 15.2.0 (`#12 <https://github.com/gazebo-release/sdformat_vendor/issues/12>`_)
 * Contributors: Carlos Agüero
 
