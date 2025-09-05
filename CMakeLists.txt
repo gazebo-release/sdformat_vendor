@@ -19,6 +19,7 @@ set(LIB_VER ${LIB_VER_MAJOR}.${LIB_VER_MINOR}.${LIB_VER_PATCH})
 find_package(ament_cmake_core REQUIRED)
 find_package(ament_cmake_vendor_package REQUIRED)
 find_package(ament_cmake_export_dependencies REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 
 find_package(gz_cmake_vendor REQUIRED)
 find_package(gz_math_vendor REQUIRED)
@@ -38,6 +39,8 @@ if(NOT $ENV{GZ_RELAX_VERSION_MATCH} STREQUAL "")
   set(VERSION_MATCH "")
 endif()
 
+ament_get_python_install_dir(INSTALL_PYTHON_PATH)
+
 find_package(${LIB_NAME_FULL} ${VERSION_MATCH} ${LIB_VER} COMPONENTS all QUIET)
 
 ament_vendor(${LIB_NAME_UNDERSCORE}_vendor
@@ -45,7 +48,7 @@ ament_vendor(${LIB_NAME_UNDERSCORE}_vendor
   VCS_URL https://github.com/gazebosim/${GITHUB_NAME}.git
   VCS_VERSION ${GITHUB_NAME}${LIB_VER_MAJOR}_${LIB_VER}${LIB_VER_SUFFIX}
   CMAKE_ARGS
-    -DSKIP_PYBIND11:BOOL=ON
+    -DGZ_PYTHON_INSTALL_PATH=${INSTALL_PYTHON_PATH}
   GLOBAL_HOOK
 )
 
