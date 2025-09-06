@@ -24,6 +24,7 @@ in a manner suitable for robotic applications
   <buildtool_depend>ament_cmake_core</buildtool_depend>
   <buildtool_depend>ament_cmake_test</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
 
   <buildtool_depend>cmake</buildtool_depend>
   <build_depend>tinyxml2</build_depend>
