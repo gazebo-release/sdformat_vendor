@@ -2,8 +2,8 @@
 Changelog for package sdformat_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2025-09-08)
+------------------
 * Jetty support: bump to 16.0.0, fix package names (`#16 <https://github.com/gazebo-release/sdformat_vendor/issues/16>`_)
   * Jetty support: bump to 16.0.0, fix package names
   Major version numbers have been removed from package
