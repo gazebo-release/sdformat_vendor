@@ -114,8 +114,8 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}-config.cmake
 
 # Configure the Python shim file
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/unversioned_shim.py.in
-               ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}.py
-               @ONLY)
+  ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}.py
+  @ONLY)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${LIB_NAME}.py
-        DESTINATION "opt/${PROJECT_NAME}/lib/python")
+  DESTINATION "opt/${PROJECT_NAME}/lib/python")
