@@ -18,7 +18,7 @@
 in a manner suitable for robotic applications
   </description>
   <maintainer email="addisuzt@intrinsic.ai">Addisu Z. Taddese</maintainer>
-  <license>Apache License 2.0</license>
+  <license>Apache-2.0</license>
   <url type="website">https://github.com/gazebosim/sdformat</url>
 
   <buildtool_depend>ament_cmake_core</buildtool_depend>
